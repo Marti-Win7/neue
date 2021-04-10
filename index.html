@@ -11,27 +11,86 @@
 		
 	</head>
 	<body>
-<!-- Einleitung             Zeile  270 -->		
-<!-- Globale Einstellungen  Zeile  620 -->
-<!-- Serien Planer          Zeile 1820 -->
-<!-- Senderzuordnung        Zeile 2080 -->
-<!-- Serien Marker          Zeile 2345 -->
-<!-- Für die ganz eiligen   Zeile 2945 -->
-<!-- Serie hinzufügen       Zeile 3010 -->
-<!-- Die Suche              Zeile 3085 -->
-<!-- Timer-Liste            Zeile 3170 -->
-<!-- Die TV-Planer Mail     Zeile 3320 -->
-<!-- Sonstige Funktionen    Zeile 3710 -->
-<!-- SR Webinterface        Zeile 4120 -->
-<!-- FAQ / HGF / WTW        Zeile 4305 -->
-<!-- Index / Begriffe       Zeile 4920 -->
-<!-- Changelog              Zeile 5250 -->
+<!-- Sidebar Menü           Zeile  111 -->		
+<!-- Einleitung             Zeile  325 -->		
+<!-- Globale Einstellungen  Zeile  680 -->
+<!-- Serien Planer          Zeile 1880 -->
+<!-- Senderzuordnung        Zeile 2140 -->
+<!-- Serien Marker          Zeile 2405 -->
+<!-- Für die ganz eiligen   Zeile 3005 -->
+<!-- Serie hinzufügen       Zeile 3070 -->
+<!-- Die Suche              Zeile 3145 -->
+<!-- Timer-Liste            Zeile 3230 -->
+<!-- Die TV-Planer Mail     Zeile 3380 -->
+<!-- Sonstige Funktionen    Zeile 3770 -->
+<!-- SR Webinterface        Zeile 4180 -->
+<!-- FAQ / HGF / WTW        Zeile 4365 -->
+<!-- Index / Begriffe       Zeile 5010 -->
+<!-- Changelog              Zeile 5345 -->
 
-<!--wrapper start-->
-		<div id="wrappercol" class="wrapper">
-			<!--header menu start-->
-			<div id="headercol" class="header">
-				<div class="header-menu">
+
+<!--header menu start-->
+<nav id="headercol" class="navbar navbar-expand-lg fixed-top">
+	<div class="container-fluid">
+		<div class="logo">
+			<a href="#"><img src="images/plugin.png" alt="Logo">
+			</a>
+		</div>
+		<div class="title"><a href="index.html">Serienrecorder <span>Anleitung</span></a>
+	  	</div>
+		<div id="sidebarbtn" class="sidebar-btn">
+		  <i class="fa fa-bars"></i>
+	  	</div>
+		<div data-toggle="collapse" data-target="#menue" class="navbar-toggler">
+		<span class="navbar-toggler-icon"><i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i></span>
+	  	</div>
+	  	<div id="menue" class="collapse navbar-collapse justify-content-end">
+		<ul class="navbar-nav text-center">
+		
+			<li class="dropdown mr-5">
+				<div class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+				  <span class="textfarbe"> SR Versionen</span>
+				</div>
+				<ul class="dropdown-menu text-center">
+				  <h5 class="dropdown-header">Release-Versionen</h5>
+				  <li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/85765-serien-recorder-4-3-0-21-03-2021/&postID=2071072#post2071072" target="_blank">Release 4.2.5</a></li>
+				  <li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/85765-serien-recorder-4-3-0-21-03-2021/&postID=2090464#post2090464" target="_blank">Release 4.3.0</a></li>
+				  <li class="dropdown-divider"></li>
+				  <h5 class="dropdown-header">Beta-Versionen</h5>
+				  <li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/85765-serien-recorder-4-3-0-21-03-2021/&postID=2081104#post2081104" target="_blank">Beta 4.2.8</a></li>
+				  <li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/85765-serien-recorder-4-3-0-21-03-2021/&postID=2094105#post2094105" target="_blank">Beta 4.3.1</a></li>
+				</ul>
+			</li>
+		  
+		    <li class="dropdown mr-5">
+				<div class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+				<span class="textfarbe">SR WebInterface</span>
+				</div>
+				<ul class="dropdown-menu text-center">
+			  	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-1-09-04-2021/&postID=2071152#post2071152" target="_blank">Webinterface</a></li>
+			  	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-1-09-04-2021/&postID=2081107#post2081107" target="_blank">Version 0.8.0</a></li>
+			 	 <li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-1-09-04-2021/&postID=2094846#post2094846" target="_blank">Version 0.8.1</a></li>
+				</ul>
+		  	</li>
+		
+		  <!--
+		  <li class="nav-item"><a class="nav-link" href="#">Aktuelles</a></li>
+		  -->
+		  <div class="suchfeld mt-2">
+			<input type="text" placeholder="Suche..">
+		</div>
+		</ul>
+		</div>
+	</div>
+  </nav>
+<!--header menu end-->
+
+
+<!--wrapper start-->  
+<div id="wrappercol" class="wrapper">
+			
+			<!--<div id="headercol" class="header">
+					<div class="header-menu">
 					<div class="title"><a href="index.html">Serienrecorder <span>Anleitung</span></a>
 					</div>
 					<div id="sidebarbtn" class="sidebar-btn">
@@ -45,19 +104,15 @@
 					</ul>
 					</div>
 				</div>
-			</div>
-			<!--header menu end-->
+			</div>-->
+			
+			
 			<!--sidebar start-->
 			<div class="sidebar">
 				<div class="sidebar-menu" id="farbe">
-					<center class="profile">
-						<a href="#">	<img src="images/plugin.png" alt="Logo">
-						</a>
-
-						<p>
-						<a href="#" class="button">Serienrecorder Anleitung</a>
-						</p>
-					</center>
+					<div class="profile center dd_ausgleich">
+					<!--<p><a href="#" class="button">Serienrecorder Anleitung</a></p>-->
+					</div>
 					<ul class="item" id="test">
 						<li data-toggle="collapse" data-target="#einleitung">
 							<a href="#starteinleitung"><span class="fw">Einleitung </span>
@@ -109,7 +164,7 @@
 							<li class="subsub"><a href="#tastatur-sp"><span>Tastaturbelegung</span></a></li>
 						</ul>
 					</ul>
-					<ul class="item" id="test">
+					<ul class="item dd_ausgleich" id="test">
 						<li>
 						<a href="#startsenderzuordnung">
 							<span class="fw">Senderzuordnung</span>
@@ -132,7 +187,7 @@
 							<li class="subsub"><a href="#tastatur-sm"><span>Tastaturbelegung</span></a></li>
 						</ul>
 					</ul>
-					<ul class="item" id="test">
+					<ul class="item dd_ausgleich" id="test">
 						<li>
 						<a href="#starteiligen">
 							<span class="fw">Für die ganz Eiligen</span>
@@ -152,7 +207,7 @@
 						</ul>
 
 					</ul>
-					<ul class="item" id="test">
+					<ul class="item dd_ausgleich" id="test">
 						<li>
 						<a href="#startsuche">
 							<span class="fw">Die Suche</span>
@@ -160,14 +215,14 @@
 						</li>
 					</ul>
 
-					<ul class="item" id="test">
+					<ul class="item dd_ausgleich" id="test">
 						<li>
 						<a href="#starttimer-liste">
 							<span class="fw">Timer-Liste</span>
 						</a>
 						</li>
 					</ul>
-					<ul class="item" id="test">
+					<ul class="item dd_ausgleich" id="test">
 						<li>
 						<a href="#starttv-planer-mail">
 							<span class="fw">TV-Planer Mail</span>
@@ -208,21 +263,21 @@
 							<li class="subsub"><a href="#weblog"><span>Log</span></a></li>
 						</ul>
 					</ul>
-					<ul class="item" id="test">
+					<ul class="item dd_ausgleich" id="test">
 						<li>
 						<a href="#startfaq">
 							<span class="fw">FAQ / HGF / WTW</span>
 						</a>
 						</li>
 					</ul>
-					<ul class="item" id="test">
+					<ul class="item dd_ausgleich" id="test">
 						<li>
 						<a href="#startbegriffe">
 							<span class="fw">Index</span>
 						</a>
 						</li>
 					</ul>
-					<ul class="item" id="test">
+					<ul class="item dd_ausgleich" id="test">
 						<li>
 						<a href="#startchangelog">
 							<span class="fw">Changelog</span>
@@ -5693,13 +5748,21 @@
 			$("#sm-hinzufügen").addClass("hintergrund2");
 			$("#sonstige").addClass("hintergrund2");
 			$("#webinterface").addClass("hintergrund2");
-
-			
-
-			
         })
-		
 		</script>
+		<script>
+			$(".nav-item").click(function(){
+			  $("#menue").collapse('hide');
+			  $("#menue .bg-primary").removeClass("bg-primary"); 
+			 
+	   
+			})
+			$(".dropdown").click(function(){
+			  if(!$(this).hasClass("show")) return;
+			   $("#menue li>.bg-primary").removeClass("bg-primary");
+			   
+			})
+		 </script> 
 
 	</body>
 </html>

@@ -8,6 +8,19 @@
 body{
   background: #fff;
 }
+.navbar{
+  
+  background: #2F323A;
+  
+  
+}
+
+.textfarbe{
+  color: white
+}
+.textfarbe:hover{
+  color: #4CCEE8;
+}
 
 .wrapper .header{
   z-index: 1;
@@ -27,32 +40,41 @@ body{
   align-items: center;
   padding: 0 20px;
 }
-
-.wrapper .header .header-menu .title{
+.logo{
+  margin-left: 50px;
+  height: 50px;
+}
+.title{
   color: #fff;
   font-size: 25px;
   
   font-weight: 700;
-  margin-left: 340px;
+  margin-left: 120px;
 }
 
-.wrapper .header .header-menu .title span{
+.title span{
   color: #4CCEE8;
 }
-.wrapper .header .header-menu .title a{
+.title a{
   color: #fff;
 }
-.wrapper .header .header-menu .title a:hover{
+.title a:hover{
   text-decoration: none;
   font-size: 25px;
   font-weight: 900;
   
 }
+.suchfeld input[type=text] {
+  border: 1px solid #ccc;  
+}
+.suchfeld:hover{
+  border: 1px solid white;
+}
 
-.wrapper .header .header-menu .sidebar-btn{
+.sidebar-btn{
   color: #fff;
   position: absolute;
-  margin-left: 240px;
+  margin-left: 220px;
   font-size: 22px;
   font-weight: 900;
   cursor: pointer;
@@ -60,7 +82,7 @@ body{
   transition-property: color;
 }
 
-.wrapper .header .header-menu .sidebar-btn:hover{
+.sidebar-btn:hover{
   color: #4CCEE8;
 }
 
@@ -92,7 +114,7 @@ body{
   z-index: 2;
   background: #2F323A;
   position: fixed;
-  top: 1px;
+  top: 60px;
   width: 250px;
   height: 100%;
   transition: 0.3s;
@@ -104,25 +126,26 @@ body{
   overflow: hidden;
 }
 
-.wrapper .sidebar .sidebar-menu .profile img{
+.profile img{
   margin: 20px 0;
   width: 100px;
   height: 50px;
 }
-.wrapper .sidebar .sidebar-menu .profile img:hover{
+.profile img:hover{
   margin: 18px 0;
   width: 105px;
   height: 55px;
   transition: 0.3s;
 }
 
-.wrapper .sidebar .sidebar-menu .profile p{
+.profile p{
   color: #bbb;
   font-weight: 700;
-  margin-bottom: 10px;
+  width: 205px;
+  height: 25px;
+  transition: 0.3s;
   
 }
-
 
 .wrapper .sidebar .sidebar-menu .item{
   width: 250px;
@@ -146,23 +169,19 @@ body{
 .wrapper .sidebar .sidebar-menu .item .menu-btn i{
   margin-right: 20px;
 }
-
+/*
 .wrapper .sidebar .sidebar-menu .item .menu-btn .drop-down{
   float: right;
   font-size: 12px;
   margin-top: 3px;
 }
-
+*/
 .wrapper .sidebar .sidebar-menu .item .sub-menu{
   background: #3498DB;
   overflow: hidden;
   max-height: 0;
   transition: 0.8s;
   transition-property: background, max-height;
-}
-.subsub{
-  background: #1372b1;
-  overflow: hidden;
 }
 
 .hintergrund{
@@ -175,6 +194,62 @@ body{
   background: #55B1F0;
   overflow: hidden;
   
+}
+.hintergrund_dd{
+ 
+  background: #1372b1;
+  
+}
+.hintergrund_dd li{
+  display: block;
+  border-bottom: 1px solid #f5c906;
+}
+.nav-item{
+  color: #f51835;
+}
+.nav-item a{
+  color: #f55e18;
+}
+.nav-item li{
+  color: #18f548;
+}
+
+.navbar-nav{
+  
+  color: white;
+}
+.navbar-nav ul{
+  background: #2F323A;
+  color: #18f548;
+  
+}
+.navbar-nav ul li{
+  display: block;
+  border-bottom: 1px solid white;
+  margin: 0px;
+  color: #18f548;
+  
+}
+
+.dropdown-menu{
+  
+  color: #18f548;
+  
+}
+.dropdown-menu a{
+  
+  color: white;
+  
+}
+.dropdown-menu a:hover{
+  background: #55B1F0;
+}
+.dropdown-header{
+  color: white;
+}
+.subsub{
+  background: #1372b1;
+  overflow: hidden;
 }
 
 .subsub a{
@@ -275,7 +350,7 @@ body{
   margin-left:-250px;
 }
 .active2{
-  margin-left:250px;
+  margin-left:0px;
 }
 .update{
   width: 300px;
@@ -291,6 +366,7 @@ body{
   color:rgb(59, 161, 245);
   font-size: 15px;
   font-weight: 700;
+  
 }
 
 .button:hover{
@@ -489,4 +565,10 @@ body{
   background: transparent;
   color: #f0ad4e;
   
+}
+.dd_ausgleich{
+  margin-bottom: 32px;
+}
+.nnav{
+  margin-left: 400px;
 }
