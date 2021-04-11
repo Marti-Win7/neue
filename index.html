@@ -171,7 +171,7 @@
 							<li class="subsub"><a href="#githubpluginupdater"><span>Der GithubPluginUpdater</span></a></li>
 							<li class="subsub"><a href="#zusatz-plugins"><span>Zusatz-Plugins</span></a></li>
 							<li class="subsub"><a href="#erste_schritte"><span>Erste Schritte</span></a></li>
-							<li class="subsub"><a href="#startglobale-einstellungen"><span>Globale Einstellungen</span></a></li>
+							<li class="subsub"><a href="#einstellungen"><span>Globale Einstellungen</span></a></li>
 							<li class="subsub"><a href="#autocheck"><span>Timer-Suchlauf</span></a></li>
 							<li class="subsub"><a href="#hilfe"><span>Hilfe</span></a></li>
 						</ul>
@@ -697,9 +697,9 @@
 	  <a class="ml-5" href="http://www.i-have-a-dreambox.com/wbb2/thread.php?threadid=194080" target="_blank">- IHAD - I have a dreambox - Forum</a>
 	</li>
 	<br>
-	<li>
+	<p>
 		Und auch sicherlich noch andere.
-	</li>
+	</p>
   </ul>
 </div>
   <br><br>
@@ -3452,7 +3452,7 @@
 		   <strong>Und genau diese Fragen werden im Folgenden beantwortet.</strong>
 		</p>
 		<br><br>
-		<p>Die <strong>TV-Planer Mail</strong> wird in den <a href="#starttv-planer-mail"><strong><u>Globalen Einstellungen</u></strong></a> unter <strong>Timer-Suchlauf</strong> aktiviert und dort werden dann auch die nötigen Einstellungen, die für den SR nötig sind, vorgenommen. Aber auch andere Dinge müssen "erledigt" werden, wie z.B. ein Account bei Wunschliste.
+		<p>Die <strong>TV-Planer Mail</strong> wird in den <a href="#startglobale-einstellungen"><strong><u>Globalen Einstellungen</u></strong></a> unter <strong>Timer-Suchlauf</strong> aktiviert und dort werden dann auch die nötigen Einstellungen, die für den SR nötig sind, vorgenommen. Aber auch andere Dinge müssen "erledigt" werden, wie z.B. ein Account bei Wunschliste.
 		</p>
 		<br>
 		
@@ -3831,7 +3831,7 @@
 		Falls einem das "automatisch" geladene Cover (es wird immer das Cover mit der besten Bewertung und den meisten Stimmen geladen) nicht zusagt, kann man in den Serien-Marker-Einstellungen mit der Taste <kbd class="blue">Cover auswählen</kbd> die <strong>Cover-Auswahl</strong> öffnen, um sich evtl. ein anderes Cover auszusuchen. In dieser <strong>Cover-Auswahl</strong> kann man mit <kbd>OK</kbd> das selektierte Cover übernehmen oder aber man verlässt die Cover-Auswahl mit <kbd>EXIT</kbd>, ohne eine Änderung.
 		</p>
 		<p><h5><strong>Beispiel Screenshots für die Cover-Auswahl</strong></h5><small>(Klick zum vergrößern)</small></p>
-			<div>
+			<div class="d-flex">
 				<div class="col-md-2">
 					<div class="thumbnail with-caption">
 					<a href="images/cover-auswahl-airwolf.jpg" target="_blank">
@@ -3927,17 +3927,18 @@
 		<span id="episodenliste" class="anchor"></span>
 		<h3 class="sub-header"><strong>Episoden-Liste&nbsp; &nbsp;<kbd>5</kbd></strong></h3>
 		<br>
-		<div class="alert alert-danger">
-			<strong>WICHTIG: </strong> Die Episoden-Liste lässt sich <strong>NICHT</strong> aus der <u>Serien-Planer Ansicht</u> heraus aufrufen, denn dort startet man damit den IMAP-Test.
-	</div>
+		
 		<ul>
 		<p>Die Daten für die <strong>Episoden-Liste</strong> werden von <a href="https://www.thetvdb.com/" target="_blank">TheTVDB.com</a> geholt, da der SerienRecorder diese nicht mehr von Wunschliste.de (WL) beziehen darf. Der Nachteil dabei ist, das nicht alles gleich bezeichnet ist, wie auf WL. Auf <strong>TheTVDB</strong> werden z.B. Specials anders bezeichnet als auf WL, was evtl. zu Problemen führen kann.
 		<br>Selbst die Anzahl der Staffeln kann unterschiedlich sein. So wird Beispielsweise auf WL Staffel 8 und Staffel 9 gelistet, mit jeweils 8 Folgen und auf TheTVDB hat die Staffel 8 plötzlich 16 Folgen. Wobei dann die Staffel 10 auf WL die Stafffel 9 auf TheTVDB ist, womit das Chaos dann fast perfekt ist.
 		<br>Auch bei Serien "ohne" Staffelbezeichnung, wie "Tatort" oder "Das Traumschiff" gibt es gravierende Unterschiede. Bei WL werden diese mit Staffel 00 und bei TheTVDB mit Staffel 01 bezeichnet.
-		<br>				
-		Sollte also jemandem auffallen, das es in dieser Hinsicht "Fehler" gibt, ist ein Feedback im <a href="https://www.vuplus-support.org/wbb4/index.php?thread/85765" target="_blank">VU+ Support Forum</a> erwünscht.
+		<p class="bs-callout blau-links">Seit der <strong>Version 4.3.0</strong> werden die Serien ohne Staffelbezeichnung, also S00Exx, auch in der Episodenliste anstatt S01Exx mit S00Exx angezeigt, damit der Abgleich mit der SR DB funktioniert.
 		</p>
-		<p>Die Episoden mit einem grünen Haken sind bereits in der Datenbank (DB) vorhanden und werden nicht mehr getimert, wogegen die mit dem roten x nicht in der DB stehen und bei Ausstrahlung getimert werden, sofern die Staffel- und Episoden-Bezeichnung übereinstimmen und von den Einstellungen im SR nichts dagegen spricht.
+		<br>
+
+		
+		</p>
+		<p>Die Episoden mit einem grünen <span class="greenfont">PLUS</span> sind bereits in der Datenbank (DB) vorhanden und werden nicht mehr getimert, wogegen die mit dem roten <span class="redfont">Minus</span> nicht in der DB stehen und bei Ausstrahlung getimert werden, sofern die Staffel- und Episoden-Bezeichnung übereinstimmen und von den Einstellungen im SR nichts dagegen spricht.
 		</p>
 		<p>In der Serien-Marker Ansicht wird die <strong>Episoden-Liste</strong> mit Taste <kbd>5</kbd> geöffnet. Hier kann dann auch der Status jeder einzelnen Episode mit <kbd class="red">ROT</kbd> (vor der Version 3.9.8 beta mit GRÜN) geändert werden, also von "grünem Haken" nach "rotem x" und umgekehrt.
 		<br>Möchte man hingegen eine ganze Reihe von Folgen der DB hinzufügen, kann man das auch mit <kbd class="blue">Manuell hinzufügen</kbd> machen. Dafür muss man dann nur noch die Staffel und den Bereich der Episoden "von ... bis" über die Eingabemaske eingeben.
@@ -3951,8 +3952,8 @@
 		<br>
 		<p><h4><strong>Beispiel Screenshots:  Links für die Episoden-Liste, rechts für die "Timer-Liste"</strong></h4>
 		<br><small>(Klick zum vergrößern)</small></p>
-		<div>
-				<div class="col-md-6">
+		<div class="d-flex">
+				<div class="col-md-4">
 					<div class="thumbnail with-caption">
 					<a href="images/sr-398-el-01a.png" target="_blank">
 						<img src="images/sr-398-el-01a.png" alt="Serien Ansicht : Episoden-Liste" style="width:100%">
@@ -3960,7 +3961,7 @@
 					</a>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<div class="thumbnail with-caption">
 						<a href="images/sr-398-tl-01a.png" target="_blank">
 						<img src="images/sr-398-tl-01a.png" alt="Serien Ansicht : Timer-Liste" style="width:100%">
@@ -4234,7 +4235,7 @@
 			<br>Nähere Informationen findet man im <a href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-0-12-02-2021/&postID=2071152#post2071152" target="_blank"><strong>VTI-Forum</strong></a> fürs WebInterface.
 		</p>
 		<div class="alert alert-info rot-links-rechts" role="alert">Wer einen Werbeblocker wie den <strong>Adblock</strong>  nutzt, sollte ihn für die Seite der SR WebInterface deaktivieren. </div>	
-	<div class="thumbnail with-caption">
+	<div class="thumbnail with-caption mt-5">
 	
 	<img src="images/sr_webif_01.png" alt="Serienrecorder Webinterface" class="center">
 	<p> <small>Serienrecorder Webinterface</small> </p>
@@ -4315,22 +4316,23 @@
 	<br>
 	<p><li>Über das "Zahnrad" <i class="fa fa-cog fa-spin"></i> in den einzelnen Serienmarkern werden die Marker-Einstellungen aufgerufen.
 	</li>
-	<br><li>Über <kbd class="btn btn-outline-warning btn-sm">Sendetermine</kbd> lassen sich die Sendetermine aufrufen. Durch einen klick auf einen der Sendetermine lassen sich diese zur Timererstellung aktivieren/deaktivieren.
+	<br><li>Über <kbd class="btn btn-outline-warning btn-sm btn-bg">Sendetermine</kbd> lassen sich die Sendetermine aufrufen. Durch einen klick auf einen der Sendetermine lassen sich diese zur Timererstellung aktivieren/deaktivieren.
 	</li>
-	<br><li>Über <kbd class="btn btn-outline-info btn-sm">Informationen</kbd> werden die Serien-Infos abgerufen.
+	<br><li>Über <kbd class="btn btn-outline-info btn-sm btn-bg">Informationen</kbd> werden die Serien-Infos abgerufen.
 	</li>
-	<br><li>Über <kbd class="btn btn-outline-dark btn-sm">Timer</kbd> werden die schon in der Datenbank gespeicherten Timer-Einträge aufgerufen. Durch einen klick auf den "Mülleimer" läßt sich jeder einzelne Eintrag aus der DB löschen.
+	<br><li>Über <kbd class="btn btn-outline-dark btn-sm btn-bg">Timer</kbd> werden die schon in der Datenbank gespeicherten Timer-Einträge aufgerufen. Durch einen klick auf den "Mülleimer" läßt sich jeder einzelne Eintrag aus der DB löschen.
 	</li>
-	<br><li>Über <kbd class="btn btn-outline-dark btn-sm">Löschen</kbd> läßt sich der Serienmarker, mit oder auch ohne die DB Einträge, löschen.
+	<br><li>Über <kbd class="btn btn-outline-dark btn-sm btn-bg">Löschen</kbd> läßt sich der Serienmarker, mit oder auch ohne die DB Einträge, löschen.
 	</li>
 	<br><li>Die Felder für <kbd class="green">Stallel</kbd> und <kbd class="green">Sender</kbd> sind auch "klickbar", worüber sich die einzelnen Serienmarker einstellen lassen.
-	<br>
-	<div class="bs-callout bs-callout-info">Um bei der <kbd class="green">Stallel</kbd>-Auswahl die Option <span class="bluefont">"Staffeln ab"</span> nutzen zu können, muss man erst die <span class="bluefont"><strong>Staffel</strong></span> auswählen und dann mit gedrückter <kbd>Strg</kbd>-Taste das <span class="bluefont">"Staffeln ab"</span> anklicken.
-				</div>
+	<br><br>
+	<div class="bs-callout bs-callout-info">Bei der <kbd class="green">Stallel</kbd>-Auswahl wird, wenn man auf <span class="bluefont"><strong>"Staffeln ab"</strong></span> klick, sofort auch die <span class="bluefont"><strong>Staffel </strong></span> <kbd class="green">01</kbd> als "Vorlage" mit ausgewählt. Man kann jetzt entweder die <kbd class="green">01</kbd> oben löschen und mit gedrückter <kbd>Strg</kbd>-Taste eine (oder mehrere) Staffeln dazu wählen oder aber man wählt erst mit gedrückter <kbd>Strg</kbd>-Taste eine (oder mehrere) Staffeln dazu und löscht dann die <kbd class="green">01</kbd>.
+	</div>
+	<!----
 	<a href="images/Staffel-Auswahl.gif" target="_blank">
 		<img src="images/Staffel-Auswahl.gif" alt="Staffel-Auswahl.gif" style="width:25%">
 	</a>
-				
+	-->	
 	
 	</li>
 	</p>

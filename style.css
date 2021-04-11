@@ -245,7 +245,9 @@ body{
   background: #55B1F0;
 }
 .dropdown-header{
-  color: white;
+  color: rgb(80, 189, 240);
+  font-size: 16px;
+  font-weight: 700;
 }
 .subsub{
   background: #1372b1;
@@ -380,7 +382,7 @@ body{
   margin-top: 30px;
   margin-bottom: 20px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2;
 }
 @media (min-width: 768px) {
@@ -626,4 +628,7 @@ body{
 .sub-header{
   margin-top: 100px;
   margin-bottom: 30px;
+}
+.btn-bg{
+  background: white;
 }
