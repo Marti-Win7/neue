@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="dateien/font-awesome.min.css">
 		
 		
+		
 	</head>
 	<body>
 <!-- Sidebar Menü           Zeile  111 -->		
@@ -69,21 +70,64 @@
 				<ul class="dropdown-menu text-center">
 			  	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-1-09-04-2021/&postID=2071152#post2071152" target="_blank">Webinterface</a></li>
 			  	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-1-09-04-2021/&postID=2081107#post2081107" target="_blank">Version 0.8.0</a></li>
-			 	 <li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-1-09-04-2021/&postID=2094846#post2094846" target="_blank">Version 0.8.1</a></li>
+			 	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-1-09-04-2021/&postID=2094846#post2094846" target="_blank">Version 0.8.1</a></li>
+			 	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-2-10-04-2021/&postID=2095144#post2095144" target="_blank">Version 0.8.2</a></li>
 				</ul>
 		  	</li>
+			  <li class="dropdown mr-5">
+				<div class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+				<span class="textfarbe">Weitere Links</span>
+				</div>
+				<ul class="dropdown-menu text-center">
+				<li class="nav-item"><a class="nav-link" href="https://github.com/einfall/serienrecorder/releases" target="_blank">SR und WebIf auf Github</a></li>	
+			  	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/117977-githubpluginupdater/" target="_blank">GithubPluginUpdater</a></li>
+			  	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/filebase/index.php?entry/202-dcc-dreambox-control-center-e2-v1-50/" target="_blank">DCC</a></li>
+			 	<li class="nav-item"><a class="nav-link" href="https://www.vuplus-support.org/wbb4/index.php?thread/142130-open-webif-aktuell/" target="_blank">OpenWebIf updaten</a></li>
+			 	
+				</ul>
+		  	</li>  
 		
 		  <!--
 		  <li class="nav-item"><a class="nav-link" href="#">Aktuelles</a></li>
-		  -->
+		  
 		  <div class="suchfeld mt-2">
 			<input type="text" placeholder="Suche..">
-		</div>
+		  </div>
+		  -->
+
+<!-- Modal / Suche Button start-->
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+			Suche...
+		</button>
+<!-- Modal / Suche Button end-->
 		</ul>
 		</div>
 	</div>
+	
+  
+ 
   </nav>
 <!--header menu end-->
+
+<!-- Modal / Suche Hinweis-Fenster start-->
+<!--Das Hinweis Fenster muss außerhalb der Navbar liegen, weil es innerhalb der Navbar nicht funktioniert-->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content"> 
+            <div class="modal-header">
+                <h2 class="modal-title bluefont">Hinweis!</h2> 
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body ">
+                Für eine Suche Bitte die Browsereigene Suchfunktion <br> über <kbd>Strg + F</kbd> öffnen.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss = "modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal / Suche Hinweis-Fenster end-->
 
 
 <!--wrapper start-->  
@@ -321,6 +365,9 @@
 <!-- Einleitung start -->	
 			
 			<h1 class="page-header">Einleitung </h1>
+
+  
+ 
 			
 
 
@@ -4182,6 +4229,7 @@
 			<br>Dieses Webinterface ist noch im Aufbau/Entwicklung und beinhaltet noch nicht alle Funktionen, auch kann es in diesem Stadium noch zu Fehlern/Crashes kommen, daher unbedingt mindestens den 1. Post im Thread für das <strong>"Serienrecorder Webinterface"</strong> lesen. Dort steht z.B. auch, welche SR-Version man für welche SR-WebIf-Version braucht. Manche Optionen oder Einstellungen kann man zwar sehen, aber es passiert nichts, was daran liegt, das daran gerade gearbeitet wird. Es wird sicherlich auch nicht ALLES Einzug in das SR WebInterface halten.
 			<br>Nähere Informationen findet man im <a href="https://www.vuplus-support.org/wbb4/index.php?thread/142111-serienrecorder-webinterface-0-8-0-12-02-2021/&postID=2071152#post2071152" target="_blank"><strong>VTI-Forum</strong></a> fürs WebInterface.
 		</p>
+		<div class="alert alert-info rot-links-rechts" role="alert">Wer einen Werbeblocker wie den <strong>Adblock</strong>  nutzt, sollte ihn für die Seite der SR WebInterface deaktivieren. </div>	
 	<div class="thumbnail with-caption">
 	
 	<img src="images/sr_webif_01.png" alt="Serienrecorder Webinterface" class="center">
@@ -5726,7 +5774,7 @@
 </div>
 <!--wrapper end-->
 		<script src="dateien/jquery.min.js"></script>
-    	<script src="dateien/poppers.min.js"></script>
+    	
     	<script src="dateien/bootstrap.min.js"></script>
 		
 		<script>

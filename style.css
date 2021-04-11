@@ -502,7 +502,23 @@ body{
 }
 .bs-callout-info {
   border-left-color: #5bc0de;
-
+}
+.blau-links{
+  border-left-width: 8px;
+  border-radius: 9px;
+  border-left-color: #5bc0de;
+}
+.rot-links{
+  border-left-width: 8px;
+  border-radius: 9px;
+  border-left-color: #f30909;
+}
+.rot-links-rechts{
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-radius: 9px;
+  border-left-color: #f30909;
+  border-right-color: #f30909;
 }
 .thumbnail.with-caption {
   
@@ -571,4 +587,11 @@ body{
 }
 .nnav{
   margin-left: 400px;
+}
+.modal-body{
+  color: red;
+  font-size: 22px;
+}
+.modal-title{
+  margin-left: 100px;
 }
