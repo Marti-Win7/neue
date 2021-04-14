@@ -11,8 +11,30 @@ body{
 .navbar{
   
   background: #2F323A;
+}
+#tooltip {
+  background-color: #1372b1;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: none;
   
+}
+#tooltip[data-show] {
+  display: block;
+}
+#tip {
+  background-color: #1372b1;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: none;
   
+}
+#tip[data-show] {
+  display: block;
 }
 
 .textfarbe{
@@ -90,7 +112,7 @@ body{
 }
 .bigfont:hover{
   color: #96cef3;
-  font-size: 52px;
+  
 }
 
 .wrapper .header .header-menu ul{

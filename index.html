@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Neue Anleitung</title>
+		
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 		<link rel="stylesheet" href="dateien/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css">
@@ -34,16 +35,18 @@
 <nav id="headercol" class="navbar navbar-expand-xl fixed-top">
 	<div class="container-fluid">
 		<div id="sidebarbtn" class="sidebar-btn">
-			<span data-toggle="tooltip" data-placement="right" title="Sidebar verstecken!"><i class="fa fa-angle-left fa-2x bigfont"></i></span>
+			<span id="sidehide" aria-describedby="tooltip"><i class="fa fa-angle-left fa-2x bigfont"></i></span>
+			<div id="tooltip" role="tooltip">Sidebar verstecken</div>
 			<!----
 			<i class="fa fa-bars" data-toggle="tooltip" data-placement="right" title="Sidebar verstecken!"></i>
 			-->
 			</div>
 		<div class="logo">
-			<a href="#" data-toggle="tooltip" data-placement="right" title="gehe zum Seitenanfang"><img src="images/plugin.png" alt="Logo">
+			<a href="#" id="seiteladen" aria-describedby="tip"><img src="images/plugin.png" alt="Logo">
 			</a>
+			<div id="tip" role="tooltip">Seitenanfang</div>
 		</div>
-		<div class="title" data-toggle="tooltip" data-placement="right" title="Seite neu laden"><a href="index.html">Serienrecorder <span>Anleitung</span></a>
+		<div class="title"><a href="index.html">Serienrecorder <span>Anleitung</span></a>
 	  	</div>
 		
 		<div data-toggle="collapse" data-target="#menue" class="navbar-toggler">
@@ -100,7 +103,7 @@
 		  -->
 
 <!-- Modal / Suche Button start-->
-		<button type="button" class="btn grad-grün" data-toggle="modal" data-target="#myModal">
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
 			Suche...
 		</button>
 <!-- Modal / Suche Button end-->
@@ -358,8 +361,10 @@
 <!-- Einleitung start ----------------------------------------------------------------> 	
 	<div class="container-fluid">		
 			<h1 class="page-header">Einleitung </h1>
-
-  
+			<!----
+			<button id="button" aria-describedby="tooltip">My button</button>
+    <div id="tooltip" role="tooltip">My tooltip</div>
+-->
  
 			
 
@@ -5803,10 +5808,46 @@
 </div>
 </div> <!--class="main-container"-->
 </div> <!--wrapper end   id="wrappercol" class="wrapper"-->
-
+		
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
 		<script src="dateien/jquery.min.js"></script>
-    	
     	<script src="dateien/bootstrap.min.js"></script>
+		
+		<!--Toggler start-->
+		<script>
+			const sidehide = document.querySelector('#sidehide');
+			const tooltip = document.querySelector('#tooltip');
+		
+
+			const popperInstance = Popper.createPopper(sidehide, tooltip, {
+				placement: 'bottom-end',
+			});
+
+		function show() {
+			tooltip.setAttribute('data-show', '');
+			  popperInstance.update();
+			}
+			
+
+		function hide() {
+			tooltip.removeAttribute('data-show');
+			}
+
+			const showEvents = ['mouseenter', 'focus'];
+			const hideEvents = ['mouseleave', 'blur'];
+
+			showEvents.forEach(event => {
+				sidehide.addEventListener(event, show);
+				
+			});
+			
+
+			hideEvents.forEach(event => {
+				sidehide.addEventListener(event, hide);
+				
+			});
+			
+		</script>
 		
 		<script>
 		
