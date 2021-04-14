@@ -85,6 +85,13 @@ body{
 .sidebar-btn:hover{
   color: #4CCEE8;
 }
+.bigfont{
+  color: #39a1e6;
+}
+.bigfont:hover{
+  color: #96cef3;
+  font-size: 52px;
+}
 
 .wrapper .header .header-menu ul{
   display: flex;
@@ -633,4 +640,16 @@ body{
 }
 .btn-bg{
   background: white;
+}
+.grad-grün{
+  background: linear-gradient(90deg, #2aad4d,#3d8550, #6FF192);
+  color: white;
+}
+.grad-grün:hover{
+  color: rgb(194, 204, 159);
+  background: linear-gradient(90deg, #259743,#357245, #5dc97a);
+}
+.bgwhite:hover{
+  background: white;
+  
 }
