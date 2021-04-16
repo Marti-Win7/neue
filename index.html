@@ -37,14 +37,11 @@
 		<div id="sidebarbtn" class="sidebar-btn">
 			<span id="sidehide" aria-describedby="tooltip"><i class="fa fa-angle-left fa-2x bigfont"></i></span>
 			<div id="tooltip" role="tooltip">Sidebar verstecken</div>
-			<!----
-			<i class="fa fa-bars" data-toggle="tooltip" data-placement="right" title="Sidebar verstecken!"></i>
-			-->
-			</div>
+			
+		</div>
 		<div class="logo">
-			<a href="#" id="seiteladen" aria-describedby="tip"><img src="images/plugin.png" alt="Logo">
+			<a href="#"><img src="images/plugin.png" alt="Logo">
 			</a>
-			<div id="tip" role="tooltip">Seitenanfang</div>
 		</div>
 		<div class="title"><a href="index.html">Serienrecorder <span>Anleitung</span></a>
 	  	</div>
@@ -94,14 +91,6 @@
 				</ul>
 		  	</li>  
 		
-		  <!--
-		  <li class="nav-item"><a class="nav-link" href="#">Aktuelles</a></li>
-		  
-		  <div class="suchfeld mt-2">
-			<input type="text" placeholder="Suche..">
-		  </div>
-		  -->
-
 <!-- Modal / Suche Button start-->
 		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
 			Suche...
@@ -110,10 +99,7 @@
 		</ul>
 		</div>
 	</div>
-	
-  
- 
-  </nav>
+</nav>
 <!--header menu end-->
 
 <!-- Modal / Suche Hinweis-Fenster start-->
@@ -127,8 +113,7 @@
             </div>
             <div class="modal-body center">
                 Für eine Suche Bitte die Browsereigene Suchfunktion <br> über <kbd>Strg + F</kbd> öffnen.
-			   
-            </div>
+			</div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss = "modal">Close</button>
             </div>
@@ -140,12 +125,11 @@
 
 <!--wrapper start-->  
 <div id="wrappercol" class="wrapper">
-			
-			
-			<!--sidebar start-->
+
+<!--sidebar start-->
 			<div class="sidebar">
 				<div class="sidebar-menu" id="farbe">
-					<div class="profile center dd_ausgleich">
+					<div class="dd_ausgleich">
 					<!--<p><a href="#" class="button">Serienrecorder Anleitung</a></p>-->
 					</div>
 					<ul class="item" id="test">
@@ -324,7 +308,7 @@
 					<br><br><br><br>
 				</div>
 			</div>
-			<!--sidebar end-->
+<!--sidebar end-->
 
 
 <!--main container start-->
@@ -361,14 +345,6 @@
 <!-- Einleitung start ----------------------------------------------------------------> 	
 	<div class="container-fluid">		
 			<h1 class="page-header">Einleitung </h1>
-			<!----
-			<button id="button" aria-describedby="tooltip">My button</button>
-    <div id="tooltip" role="tooltip">My tooltip</div>
--->
- 
-			
-
-
 			<br>
 				<div>
 					<p class="lead"> Der SerienRecorder erleichtert und automatisiert das Aufnehmen von Serien, indem für angelegte Serien-Marker automatisch Timer erstellt werden. Er "überwacht", ob eine Folge bereits aufgenommen wurde oder nicht, sodass es zu keinen Mehrfachaufnahmen kommt. </p>
@@ -376,7 +352,7 @@
 					<p>Zuvor jedoch der Hinweis, das <span class="redfont"><strong>JavaScript</strong></span> nötig ist, um diese Anleitung vollständig sehen und nutzen zu können. Ohne <span class="redfont"><strong>JavaScript</strong></span> sieht man z.B. das Inhaltsverzeichnis/Menü auf der linken Seite nicht. <a href="images/anleitung-startseite.png" target="_blank"><strong>(Screenshot)</strong></a>
 					</p>
 					<br><br>
-					<p><h4>Der SerienRecorder besteht im wesentlichen aus 4 Ansichten:</h4>
+					<h4 class="underline-blau">Der SerienRecorder besteht im wesentlichen aus 4 Ansichten:</h4>
 					<br>
 					<ul class="liststyle-none">
 					  <li class="bgwhite"><kbd class="red">&nbsp; &nbsp; &nbsp; </kbd>&nbsp; &nbsp;<a href="#startserienplaner"><strong><u>Planer-Ansicht</u></strong></a>
@@ -400,7 +376,7 @@
 					</p>
 					<br><br><br>
 				  <p><h5><strong>Beispiel Screenshots für die 4 Ansichten</strong></h5></p>
-				<p>	<small> (Klick zum vergrößern)</small></p>
+				  <p><small> (Klick zum vergrößern)</small></p>
 							  <div class=" center">
 								  <div class="pl-2">
 									  <p>Planer-Ansicht
@@ -446,7 +422,7 @@
 							  <p>In den Screenshots kann man sehen, daß das "Aussehen" des SerienRecorders nicht immer gleich ist, denn es ist abhängig vom verwendeten Box-Skin und/oder Einstellungen im SerienRecorder(SR) selbst. Der SR hat auch eigene Skins, aber meist ist der SR schon im Box-Skin integriert bzw. es gibt Skin-Parts dafür. Der SR kann auch auf 4K-TVs Bildschirmfüllend angezeigt werden, sofern ein passender Skin/Skinpart genutzt wird. 
 							  </p>
 							  <br><br>
-					  <p><h5><strong>Wie macht der SerienRecorder das </strong></h5></p>
+					  <p><h5><strong>Wie macht der SerienRecorder das? </strong></h5></p>
 					  <p>Dafür bezieht der SerienRecorder Daten von der kommerziellen Webseite <a href="http://www.wunschliste.de" target="_blank">http://www.wunschliste.de</a>, sodass für die Benutzung zwingend eine Internetverbindung notwendig ist. Wunschliste bietet auf seiner Webseite für so gut wie alle Serien die Ausstrahlungstermine im deutschen Fernsehen an. Diese Informationen bereitet der SerienRecorder auf und stellt eine Oberfläche zur Verfügung um die Lieblingsserien zu verwalten.</p>
 					  <p>Der Benutzer kann sog. <a href="#startserienmarker">Serien-Marker</a> für die Serien anlegen, die vom SerienRecorder überwacht werden sollen. Für jeden Serien-Marker kann konfiguriert werden, welche Staffeln und Sender in die Überwachung einbezogen werden.
 					  Einmal am Tag, zu einer einstellbaren Uhrzeit, wird ein sog. <a href="index.html#autocheck">Timer-Suchlauf</a> durchgeführt, der die Sendetermine bei Wunschliste abruft und anhand von bestimmten Vorgaben Timer für die Sendungen erstellt.
@@ -461,7 +437,8 @@
 					  <br> Im Moment darf der SerienRecorder mit freundlicher Genehmigung von Wunschliste.de die Daten über einen von uns betriebenen Proxy Server (<a href="http://www.serienserver.de" target="_blank"><strong>Serien-Server</strong></a>) abrufen um die Wunschliste Server so wenig wie möglich zu belasten. 
 					Da die Wunschliste-Seite von angemeldeten Usern lebt, ist es nur fair, dass sich JEDER Nutzer des SerienRecorder einen Account bei Wunschliste anlegt, egal ob er später die <a href="#starttv-planer-mail"><strong><u>TV-Planer E-Mail</u></strong></a> Funktion nutzt oder nicht.</p>
 					<p>Der SerienRecorder ruft die Cover und Serien-Informationen von der freien Plattform <a href="https://www.thetvdb.com/" target="_blank"><strong>TheTVDB</strong></a> ab. Hier kann jeder Cover bereitstellen oder Informationen eintragen.</p>
-					</div>
+				</div>
+				<br>
 
 					<div>
 						<p><h4><strong>Beispiel für eine Seite von wunschliste.de</strong></h4></p>
@@ -472,11 +449,11 @@
           				</div>
 					</div>
 <!-- Einleitung ende -->
-			<br><br>		
+			<br>		
 
 <!-- Anmerkungen start -->
 		<span id="anmerkungen" class="anchor"></span>
-		<h2 class="sub-header">Anmerkungen</h2>
+		<h2 class="sub-header underline-blau">Anmerkungen</h2>
 		<div>
 			<br>
 			<p>Es werden genaue Folgen-Informationen abgerufen, so können diese in den Timer und damit in die Aufnahmeinformationen mit aufgenommen werden, also z.B. "S01E10 – Der Baum". Als Ausnahme können mittlerweile aber auch Sonderfolgen/Specials mit z.B. S01 oder Serien ohne Staffelbezeichnung (Folge 345, wie z.B. Tatort) vom SerienRecorder verarbeitet werden, die Staffelbezeichnung ist dann S00.</p>
@@ -498,7 +475,7 @@
 <!-- Installation -->		
 		
 <span id="installation" class="anchor"></span>
-<h2 class="sub-header">Installation</h2>
+<h2 class="sub-header underline-blau">Installation</h2>
 <br><br>
 <div>
 	<div class="alert alert-info" role="alert"> Diese Anleitung bezieht sich idR immer auf die aktuelle Release- oder Beta-Version des SerienRecorders (siehe auch ganz oben rechts auf dieser Seite). Sollte also jemand in dieser Anleitung Optionen, Einstellungen und/oder dgl. sehen oder vermissen, was in seiner installierten Version anders ist, könnte es daran liegen. Sollte jemand die aktuelle Release- oder Beta-Version installiert haben und es stimmt trotzdem was nicht, dann Bitte im VTI-Forum melden.  
@@ -595,7 +572,7 @@
 <!-- Erste Schritte -->		
 
 <span id="erste_schritte" class="anchor"></span>
-<h2 class="sub-header">Erste Schritte</h2>
+<h2 class="sub-header underline-blau">Erste Schritte</h2>
 <br>
 <div class="alert alert-info" role="alert"> Für die ganz Eiligen bzw. die, die schnell ein Ergebnis sehen wollen, wurde eine eigene Seite angelegt, wo kurz und knapp erklärt werden soll, wie man eine Serie anlegt und die dazu nötigsten Einstellungen macht. Diese Seite findet man <a href="#starteiligen"><strong><u>HIER</u></strong></a>.</div>
 <div> Beim ersten Start wird zunächst die Datenbank des SerienRecorders angelegt, standardmäßig im Verzeichnis <strong>"/etc/enigma2/"</strong>, der Pfad kann aber jederzeit in den globalen Einstellungen geändert werden:
@@ -780,28 +757,27 @@
 			<br>Die <strong>Config.backup</strong> kann auch dazu verwendet werden, die Daten für den <strong>IMAP-Acount</strong> (Login, Passwort) per PC einzugeben, was im Bereich der <a href="#imap-eingabe"><strong><u>TV Planer Mail</u></strong></a> näher beschrieben wird.
 			</div>
 			<br>
-			<h2>Hier noch die anderen Tasten</h2>
-			<br>
-            <h4 class="sub-header">Navigieren und Einstellungen ändern</h4>
+			
+			
+            <h4 class="sub-header underline-blau">Navigieren und Einstellungen ändern</h4>
             <ul>
-			<div>
-                <p>Das Navigieren in den Einstellungen geschiet Zeilenweise mittels <strong>Steuerkreuz</strong> <span class="bi bi-arrow-down-square gz22"></span>&nbsp;<span class="bi bi-arrow-up-square gz22"></span> und das Seitenweise blättern mit den <kbd>CH <i class="bi bi-arrow-down-square"></i></kbd>&nbsp;<kbd>CH <i class="bi bi-arrow-up-square"></i></kbd>
+			
+                <li>Das Navigieren in den Einstellungen geschiet Zeilenweise mittels <strong>Steuerkreuz</strong> <span class="bi bi-arrow-down-square gz22"></span>&nbsp;<span class="bi bi-arrow-up-square gz22"></span> und das Seitenweise blättern mit den <kbd>CH <i class="bi bi-arrow-down-square"></i></kbd>&nbsp;<kbd>CH <i class="bi bi-arrow-up-square"></i></kbd>
 					-Tasten .
- 				</p>
-				<p>Das Ändern der Optionen wird mit <strong>Steuerkreuz</strong> <span class="bi bi-arrow-left-square gz22"></span>&nbsp;<span class="bi bi-arrow-right-square gz22"></span> oder auch der <span class="badge badge-dark badge16">OK</span> Taste vorgenommen. Die vorgenomenen Änderungen werden dann mit <kbd class="green">Speichern</kbd> dauerhaft gespeichert und das Fenster geschlossen.
+				</li>
+				<li>Das Ändern der Optionen wird mit <strong>Steuerkreuz</strong> <span class="bi bi-arrow-left-square gz22"></span>&nbsp;<span class="bi bi-arrow-right-square gz22"></span> oder auch der <span class="badge badge-dark badge16">OK</span> Taste vorgenommen. Die vorgenomenen Änderungen werden dann mit <kbd class="green">Speichern</kbd> dauerhaft gespeichert und das Fenster geschlossen.
 				<br>Möchte man die gemachten Änderungen nicht behalten, kann man das Fenster mit <span class="badge badge-dark badge16">EXIT</span> verlassen und die gemachten Änderungen werden verworfen.
-				</p>
-			</div>	
+				</li>
+				<li>Über die <span class="badge badge-dark badge16">Menü</span> Taste kann die <a href="#startsenderzuordnung"><strong><u>Senderzuordnung</u></strong></a> aufgerufen werden, die "normalerweise" über die Serien-Planer Ansicht geöffnet wird.
+				</li>
 			</ul>
-			<p>Über die <span class="badge badge-dark badge16">Menü</span> Taste kann die <a href="#startsenderzuordnung"><strong><u>Senderzuordnung</u></strong></a> aufgerufen werden, die "normalerweise" über die Serien-Planer Ansicht geöffnet wird.
-			</p>
+			
 			<br><br><br>
 			
 <!-- System -->	
             <span id="system" class="anchor"></span>
 			<h2><u>Nun zu den Einstellungen im Menü selbst</u></h2>
-            <br><br>
-			
+            			
             <h2 class="sub-header">System</h2>
             <div>
                 <ul>
@@ -3303,7 +3279,7 @@
 		<div class="alert alert-info" role="alert"><strong>Wichtig:</strong> Der SerienRecorder (SR) übergibt nur die Daten zur Timererstellung an das System (Image), für die Konflikterkennung und dgl. ist das System verantwortlich, für die Aufnahmen sowieso. Sollte es aus irgendeinem Grund nicht möglich sein, einen Timer zu erstellen, wird dies dem SR mitgeteilt und der SR versucht einen "Ausweichtermin" zu erstellen. Gelingt dies dem SR nicht, wird der Timer vom SR <strong>deaktiviert</strong> angelegt, was bedeutet, das sich der User selbst darum kümmern muss, den Konflikt oder was auch immer dazu geführt hat, zu beseitigen. Dieser deaktivierte Timer wird, wie alle anderen Timer auch, in die Datenbank (DB) eingetragen. Dies bedeutet, auch ein deaktivierter Timer für eine Episode, wird nicht nochmal getimert. Sollte der deaktivierte Timer vom User nicht aktiviert werden und folglich die Episode nicht aufgenommen, fehlt demjenigen eine Episode und wird auch nicht mehr vom SR getimert, denn sie steht ja bereits in der DB.
 		<br>Existiert also ein Eintrag in der DB, dann hat der SR den Timer auch ans Image übergeben. Was danach passiert, da hat der SR keinen Einfluss drauf.</div>
 		<br><br>
-		<p><h4><strong>Beispiel Screenshot der Timer-Liste beim Öffnen</strong></h4><small>(Klick zum vergrößern)</small></p>
+		<p><h4><strong>Beispiel Screenshot der Timer-Liste beim Öffnen</strong></h4></p>
 		<!--
 		<div class="thumbnail with-caption">
 			<img src="images/timer-liste01.png" alt="Timer-Liste beim Öffnen" align="center">
@@ -3316,9 +3292,8 @@
 		
 		<div>
 			<div>
-				<div class="col-md-4 zoom">
-				<a href="images/timer-liste01.png" target="_blank">
-					<img src="images/timer-liste01.png" alt="Timer-Liste" style="width: 100%">
+				<div class="container-fluid">
+					<img src="images/timer-liste01.png" alt="Timer-Liste" style="width: 80%">
 				<p><small>Timer-Liste </small></p>
 				</a>
 			</div>
@@ -3330,17 +3305,14 @@
 		<br>Da man aber manche Serien z.B. auf "RTL HD" und andere auf "RTL UHD" timern lassen kann, ist es auch sinnvoll, dies in der Timer-Liste dementsprechend anzeigen zu lassen.(siehe Bild unten)
 		
 		</p>
-		<p><small>(Klick zum vergrößern)</small></p>
-		<div>
-			<div class="col-md-4">
-				<div class="thumbnail with-caption">
-				<a href="images/timerliste-a.png" target="_blank">
-					<img src="images/timerliste-a.png" alt="Timer-Liste " style="width:100%">
+		
+		
+				<div class="container-fluid">
+					<img src="images/timerliste-a.png" alt="Timer-Liste " class="center" style="width: 80%">
 				<p><small>Timer-Liste </small></p>
 				</a>
 			</div>
-			</div>
-		</div>
+		
 		
 		
 		<br><br>
@@ -5799,7 +5771,7 @@
 
  
 
-</div>
+	</div>
 <!-- div container-fluid -->			
 				
 </div>
@@ -5813,13 +5785,11 @@
 		<script src="dateien/jquery.min.js"></script>
     	<script src="dateien/bootstrap.min.js"></script>
 		
-		<!--Toggler start-->
+<!--Tooltip "Sidebar verstecken" start-->
 		<script>
 			const sidehide = document.querySelector('#sidehide');
 			const tooltip = document.querySelector('#tooltip');
-		
-
-			const popperInstance = Popper.createPopper(sidehide, tooltip, {
+		const popperInstance = Popper.createPopper(sidehide, tooltip, {
 				placement: 'bottom-end',
 			});
 
@@ -5827,8 +5797,6 @@
 			tooltip.setAttribute('data-show', '');
 			  popperInstance.update();
 			}
-			
-
 		function hide() {
 			tooltip.removeAttribute('data-show');
 			}
@@ -5848,6 +5816,7 @@
 			});
 			
 		</script>
+<!--Tooltip "Sidebar verstecken" end-->
 		
 		<script>
 		
@@ -5863,31 +5832,28 @@
 			$("#einleitung").addClass("hintergrund2");
 			$("#globale-einstellungen").addClass("hintergrund2");
 			$("#serienplaner").addClass("hintergrund2");
-			
 			$("#serien-marker").addClass("hintergrund2");
 			$("#sm-hinzufügen").addClass("hintergrund2");
 			$("#sonstige").addClass("hintergrund2");
 			$("#webinterface").addClass("hintergrund2");
-        })
+        	})
+			
 		</script>
 		<script>
 			$(".nav-item").click(function(){
 			  $("#menue").collapse('hide');
 			  $("#menue .bg-primary").removeClass("bg-primary"); 
-			 
-	   
 			})
 			$(".dropdown").click(function(){
 			  if(!$(this).hasClass("show")) return;
 			   $("#menue li>.bg-primary").removeClass("bg-primary");
-			   
 			})
-		 </script>
-		 <script>
+		</script>
+		<script>
 			$(document).ready(function(){
 			  $('[data-toggle="tooltip"]').tooltip();   
 			});
-			</script> 
+		</script> 
 
 	</body>
 </html>
