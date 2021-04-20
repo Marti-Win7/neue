@@ -8,6 +8,7 @@
 body{
   background: #fff;
 }
+/*--- header Navbar start ---*/
 .navbar{  
   background: #2F323A;
 }
@@ -52,9 +53,39 @@ body{
   text-decoration: none;
   font-size: 25px;
   font-weight: 900;
-  
+}
+.bigfont{
+  color: #39a1e6;
+}
+.bigfont:hover{
+  color: #96cef3;
+}
+.navbar-nav{
+  color: white;
+}
+.navbar-nav ul{
+  background: #2F323A;
+}
+.navbar-nav ul li{
+  display: block;
+  border-bottom: 1px solid white;
+  margin: 0px;
 }
 
+.dropdown-menu a{
+  color: white;
+}
+.dropdown-menu a:hover{
+  background: #55B1F0;
+}
+.dropdown-header{
+  color: rgb(80, 189, 240);
+  font-size: 16px;
+  font-weight: 700;
+}
+/*--- header Navbar end ---*/
+
+/*--- Sidebar start ---*/
 .sidebar-btn{
   color: #fff;
   margin-left: 0px;
@@ -68,12 +99,7 @@ body{
 .sidebar-btn:hover{
   color: #4CCEE8;
 }
-.bigfont{
-  color: #39a1e6;
-}
-.bigfont:hover{
-  color: #96cef3;
-}
+
 
 .wrapper .sidebar{
   z-index: 2;
@@ -112,29 +138,6 @@ body{
   
 }
 
-.navbar-nav{
-  color: white;
-}
-.navbar-nav ul{
-  background: #2F323A;
-}
-.navbar-nav ul li{
-  display: block;
-  border-bottom: 1px solid white;
-  margin: 0px;
-}
-
-.dropdown-menu a{
-  color: white;
-}
-.dropdown-menu a:hover{
-  background: #55B1F0;
-}
-.dropdown-header{
-  color: rgb(80, 189, 240);
-  font-size: 16px;
-  font-weight: 700;
-}
 .subsub{
   background: #1372b1;
   /* overflow: hidden; */
@@ -142,7 +145,7 @@ body{
 
 .subsub a{
   display: block;
-  position: relative;
+  /* position: relative; */
   color: #fff;
   white-space: nowrap;
   font-size: 15px;
@@ -164,7 +167,32 @@ body{
   color: white;
 }
 
+/*-- Nicht in Benutzung 
+.button{
+  color:rgb(59, 161, 245);
+  font-size: 15px;
+  font-weight: 700;
+}
 
+.button:hover{
+  color: #4CCEE8;
+  font-size: 16px;
+  font-weight: 800;
+  text-underline-offset: 5px;
+}
+Nicht in Benutzung --*/ 
+
+.wrapper.collapse .sidebar{
+  width: 70px;
+}
+
+.wrapper.collapse .sidebar a span{
+  display: none;
+}
+
+/*--- Sidebar end ---*/
+
+/*--- Content start ---*/
 .wrapper .main-container{
   width: (100% - 250px);
   margin-top: 70px;
@@ -176,13 +204,6 @@ body{
   transition: 0.3s;
 }
 
-.wrapper.collapse .sidebar{
-  width: 70px;
-}
-
-.wrapper.collapse .sidebar a span{
-  display: none;
-}
 
 .wrapper.collapse .main-container{
   width: calc(100% - 70px);
@@ -200,19 +221,6 @@ body{
 }
 .fehler{
   padding-right: 50px;
-}
-
-.button{
-  color:rgb(59, 161, 245);
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.button:hover{
-  color: #4CCEE8;
-  font-size: 16px;
-  font-weight: 800;
-  text-underline-offset: 5px;
 }
 
 .lead {
@@ -429,3 +437,5 @@ body{
   text-decoration-thickness: 2px;
   text-decoration-color: rgb(37, 37, 241);
 }
+
+/*--- Content end ---*/
