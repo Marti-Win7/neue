@@ -40,7 +40,7 @@ body{
   font-size: 25px;
   
   font-weight: 700;
-  margin-left: 120px;
+  margin-left: 70px;
 }
 
 .title span{
@@ -70,6 +70,9 @@ body{
   display: block;
   border-bottom: 1px solid white;
   margin: 0px;
+}
+.navbar-toggler-icon{
+  cursor: pointer;
 }
 
 .dropdown-menu a{
